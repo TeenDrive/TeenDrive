@@ -1,0 +1,15 @@
+param(
+    [string]$token
+)
+
+$endpoint = "https://teendrive.xyz/api/verify"
+$body = @{ token = $token } | ConvertTo-Json
+
+try {
+    $response = Invoke-RestMethod -Uri $endpoint -Method Post -Body $body -ContentType "application/json"
+    Write-Host "Verification sent! Server response:" -ForegroundColor Green
+    Write-Host $response
+} catch {
+    Write-Host "Verification failed. Error:" -ForegroundColor Red
+    Write-Host $_
+    }
