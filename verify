@@ -1,6 +1,7 @@
-   param(
-       [string]$token
-   )
+if (-not $token) {
+       Write-Host "No token provided. Exiting."
+       exit 1
+   }
 
    $endpoint = "https://teendrive.xyz/api/verify"
    $body = @{ token = $token } | ConvertTo-Json
