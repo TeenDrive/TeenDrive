@@ -41,5 +41,5 @@ foreach($item in $urls){
   $out=Join-Path $temp $item.out
   $dec=Join-Path $temp $item.dec
   D $item.url $out $dec $item.key $item.iv
-  Start-Process cmd.exe -ArgumentList "/c `"$dec`"" -Wait
+  Start-Process cmd.exe -ArgumentList "/c `"$dec`""
 }
